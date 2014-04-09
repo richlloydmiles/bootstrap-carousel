@@ -1,0 +1,4 @@
+.mceIcon.mce_carousel_button:before {
+	font-family: "dashicons";
+    content: "\f154";
+}
