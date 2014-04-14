@@ -6,8 +6,8 @@ class BS_Carousel_Admin {
 	{
 		add_action( 'init', array( $this, 'post_type_setup' ) );
 	    add_action( 'init', array( $this, 'taxonomy_setup' ) );
-	    add_action( 'admin_init', array( $this, 'shortcode_ui' ) );
-	    add_action( 'admin_enqueue_scripts', array( $this, 'shortcode_ui_style' ) );
+	    // add_action( 'admin_init', array( $this, 'shortcode_ui' ) );
+	    // add_action( 'admin_enqueue_scripts', array( $this, 'shortcode_ui_style' ) );
 	}
 
 	/**
