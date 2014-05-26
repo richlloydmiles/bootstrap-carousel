@@ -44,7 +44,7 @@ class BS_Carousel_Admin {
 		    'has_archive'        => false,
 		    'hierarchical'       => false,
 		    'menu_position'      => null,
-		    'supports'           => array( 'title', 'editor', 'thumbnail' )
+		    'supports'           => array( 'title', 'editor', 'thumbnail', 'page-attributes' )
 		);
 
 		register_post_type( 'slide', $args );

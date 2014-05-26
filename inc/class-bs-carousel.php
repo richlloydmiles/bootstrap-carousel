@@ -9,16 +9,15 @@ class BS_Carousel {
    
     public function output( $atts ) 
     {
-        // extract( shortcode_atts( array(
-        //     'title' => '',
-        //     'tag' => 'h1',
-        //     'content' => '',
-        //     'button_text' => 'Read More',
-        //     'link' => ''                   
-        // ), $atts ) );
+        extract( shortcode_atts( array(
+            'order' => 'ASC',
+            'orderby' => 'menu_order',      
+        ), $atts ) );
         
         $args = array(
-                'post_type' => 'slide'
+                'post_type' => 'slide',
+                'order' => $order,
+                'orderby' => $orderby
             );
 
         $slides = get_posts( $args );
